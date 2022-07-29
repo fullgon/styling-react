@@ -1,0 +1,13 @@
+$red : red;
+$orange : orange;
+$green : green;
+$blue : blue;
+$yellow : yellow;
+$indigo : indigo;
+$violet : violet;
+//믹스인 : 재사용 되는 스타일 블록을 함수처럼 사용 가능
+@mixin square($size) {
+    $calculated: 32px * $size;
+    width: $calculated;
+    height: $calculated;
+}
